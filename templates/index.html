@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>LimeMe</title>
+</head>
+<body>
+<div class="nav_menu">
+    <div class="logo">LimeMe</div>
+    <div class="user_name"> {{ user_name }} </div>
+</div>
+<div class="main">
+    <div class="notifications">
+        <p class="noti"><a class="link" href="iam">Моя страница</a></p>
+        <p class="noti"><a class="link" href="friends">Мои друзья</a></p>
+        <p class="noti"><a class="link" href="photos">Мои фотографии</a></p>
+        <p class="noti"><a class="link" href="audio">Мои аудиозаписи</a></p>
+        <p class="noti"><a class="link" href="messages">Мои сообщения</a></p>
+        <p class="noti"><a class="link" href="groups">Мои группы</a></p>
+        <p class="noti"><a class="link" href="news">Мои новости</a></p>
+        <p class="noti"><a class="link" href="news">Мои настройки</a></p>
+    </div>
+    <div class="news_blocks">
+        <div class="new_post">
+            <form>
+                <input type="text">
+            </form>
+        </div>
+        <div class="content">
+            <p>{{ content }}</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
